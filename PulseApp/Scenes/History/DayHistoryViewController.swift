@@ -56,4 +56,5 @@ extension InfoCollectionCell: UITableViewDelegate, UITableViewDataSource {
 //        }
         return cell
     }
+    
 }

@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - InfoViewController
 
-class InfoCollectionCell: UICollectionViewCell {
+class DayHistoryViewController: UICollectionViewCell {
     
     // MARK: - Structure
     
@@ -29,7 +29,7 @@ class InfoCollectionCell: UICollectionViewCell {
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
 
-extension InfoCollectionCell: UITableViewDelegate, UITableViewDataSource {
+extension DayHistoryViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5

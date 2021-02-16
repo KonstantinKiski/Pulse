@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E72868DA3F283A1F82D5C92 /* Pods_PulseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B07270EE3E1DD488BBD7F01 /* Pods_PulseApp.framework */; };
+		570B3C5C25AADE6E00E41549 /* HeartRateKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570B3C5B25AADE6E00E41549 /* HeartRateKit.storyboard */; };
+		571E015825A38F95004E2E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E015725A38F95004E2E7B /* AppDelegate.swift */; };
+		571E015A25A38F95004E2E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E015925A38F95004E2E7B /* SceneDelegate.swift */; };
+		571E016225A38F95004E2E7B /* PulseApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 571E016025A38F95004E2E7B /* PulseApp.xcdatamodeld */; };
+		571E018325A39828004E2E7B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E018225A39828004E2E7B /* R.generated.swift */; };
+		571E019B25A399FB004E2E7B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571E019A25A399FB004E2E7B /* Router.swift */; };
+		5722310925A950820048AF2B /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572230F625A950820048AF2B /* Settings.storyboard */; };
+		5722310A25A950820048AF2B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572230F725A950820048AF2B /* SettingsViewController.swift */; };
+		5722310B25A950820048AF2B /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572230F925A950820048AF2B /* Splash.storyboard */; };
+		5722310C25A950820048AF2B /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572230FB25A950820048AF2B /* Diet.storyboard */; };
+		5722310D25A950820048AF2B /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572230FC25A950820048AF2B /* DietViewController.swift */; };
+		5722310E25A950820048AF2B /* PressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572230FE25A950820048AF2B /* PressureViewController.swift */; };
+		5722310F25A950820048AF2B /* Pressure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 572230FF25A950820048AF2B /* Pressure.storyboard */; };
+		5722311025A950820048AF2B /* HeartMeasure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5722310125A950820048AF2B /* HeartMeasure.storyboard */; };
+		5722311125A950820048AF2B /* HeartMeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722310225A950820048AF2B /* HeartMeasureViewController.swift */; };
+		5722311225A950820048AF2B /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5722310425A950820048AF2B /* History.storyboard */; };
+		5722311325A950820048AF2B /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722310525A950820048AF2B /* HistoryViewController.swift */; };
+		5722311425A950820048AF2B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722310725A950820048AF2B /* RootViewController.swift */; };
+		5722311525A950820048AF2B /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5722310825A950820048AF2B /* Root.storyboard */; };
+		5722312725A950B30048AF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5722311925A950B20048AF2B /* Assets.xcassets */; };
+		5722312825A950B30048AF2B /* GothamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722311B25A950B30048AF2B /* GothamPro-LightItalic.ttf */; };
+		5722312925A950B30048AF2B /* GothamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722311C25A950B30048AF2B /* GothamPro-MediumItalic.ttf */; };
+		5722312A25A950B30048AF2B /* GothamPro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722311D25A950B30048AF2B /* GothamPro.ttf */; };
+		5722312B25A950B30048AF2B /* GothamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722311E25A950B30048AF2B /* GothamPro-Medium.ttf */; };
+		5722312C25A950B30048AF2B /* GothamPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722311F25A950B30048AF2B /* GothamPro-BlackItalic.ttf */; };
+		5722312D25A950B30048AF2B /* GothamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312025A950B30048AF2B /* GothamPro-Black.ttf */; };
+		5722312E25A950B30048AF2B /* GothamProNarrow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312125A950B30048AF2B /* GothamProNarrow-Bold.ttf */; };
+		5722312F25A950B30048AF2B /* GothamPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312225A950B30048AF2B /* GothamPro-BoldItalic.ttf */; };
+		5722313025A950B30048AF2B /* GothamProNarrow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312325A950B30048AF2B /* GothamProNarrow-Medium.ttf */; };
+		5722313125A950B30048AF2B /* GothamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312425A950B30048AF2B /* GothamPro-Italic.ttf */; };
+		5722313225A950B30048AF2B /* GothamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312525A950B30048AF2B /* GothamPro-Light.ttf */; };
+		5722313325A950B30048AF2B /* GothamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5722312625A950B30048AF2B /* GothamPro-Bold.ttf */; };
+		5722313B25A951270048AF2B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722313625A951270048AF2B /* MainTabBarController.swift */; };
+		5722313C25A951270048AF2B /* PulseDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722313725A951270048AF2B /* PulseDevice.swift */; };
+		5722313D25A951270048AF2B /* PulseColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722313825A951270048AF2B /* PulseColor.swift */; };
+		5722313E25A951270048AF2B /* PulseFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722313925A951270048AF2B /* PulseFont.swift */; };
+		5722313F25A951270048AF2B /* PulseViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5722313A25A951270048AF2B /* PulseViewSetting.swift */; };
+		575DB08725AC031600030863 /* HeartRateTagsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DB08625AC031600030863 /* HeartRateTagsController.swift */; };
+		575DB08A25AC032E00030863 /* HeartRateHitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DB08925AC032E00030863 /* HeartRateHitController.swift */; };
+		57D2001D25B4B68E00E31884 /* HeartRateKitAlgorithm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57D2001525B4B68E00E31884 /* HeartRateKitAlgorithm.mm */; };
+		57D2001E25B4B68E00E31884 /* HeartRateKitResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D2001725B4B68E00E31884 /* HeartRateKitResult.m */; };
+		57D2001F25B4B68E00E31884 /* UIView+HeartRateKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D2001925B4B68E00E31884 /* UIView+HeartRateKit.m */; };
+		57D2002025B4B68E00E31884 /* HRKButterworth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57D2001A25B4B68E00E31884 /* HRKButterworth.cpp */; };
+		57D2002125B4B68E00E31884 /* HeartRateKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D2001B25B4B68E00E31884 /* HeartRateKitController.m */; };
+		57D2002225B4B68E00E31884 /* UIImage+ImageAverageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D2001C25B4B68E00E31884 /* UIImage+ImageAverageColor.m */; };
+		AEC63E6325DBC0F100A4C70E /* DayHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E6225DBC0F100A4C70E /* DayHistoryViewController.swift */; };
+		AEC63E6625DBC0FC00A4C70E /* WeekHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E6525DBC0FC00A4C70E /* WeekHistoryViewController.swift */; };
+		AEC63E6925DBC10F00A4C70E /* MounthHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E6825DBC10F00A4C70E /* MounthHistoryViewController.swift */; };
+		AEC63E6D25DBC1DB00A4C70E /* MenuBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC63E6B25DBC1DB00A4C70E /* MenuBar.xib */; };
+		AEC63E6E25DBC1DB00A4C70E /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E6C25DBC1DB00A4C70E /* MenuBar.swift */; };
+		AEC63E7125DBC37100A4C70E /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E7025DBC37100A4C70E /* DefaultTableViewCell.swift */; };
+		AEC63E7525DBC39200A4C70E /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E7325DBC39200A4C70E /* Cache.swift */; };
+		AEC63E7625DBC39200A4C70E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E7425DBC39200A4C70E /* UIViewControllerExtension.swift */; };
+		AEC63E7925DBC9A200A4C70E /* OneRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E7825DBC9A100A4C70E /* OneRateView.swift */; };
+		AEC63E7C25DBC9A800A4C70E /* OneRateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC63E7B25DBC9A800A4C70E /* OneRateView.xib */; };
+		AEC63E8025DBD23A00A4C70E /* OneRateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC63E7F25DBD23A00A4C70E /* OneRateTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B07270EE3E1DD488BBD7F01 /* Pods_PulseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		570B3C1F25AACF5800E41549 /* PulseApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PulseApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		570B3C5B25AADE6E00E41549 /* HeartRateKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeartRateKit.storyboard; sourceTree = "<group>"; };
+		571E015425A38F95004E2E7B /* PulseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		571E015725A38F95004E2E7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		571E015925A38F95004E2E7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		571E016125A38F95004E2E7B /* PulseApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PulseApp.xcdatamodel; sourceTree = "<group>"; };
+		571E016825A38F9A004E2E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571E018225A39828004E2E7B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		571E019A25A399FB004E2E7B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		572230F625A950820048AF2B /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		572230F725A950820048AF2B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		572230F925A950820048AF2B /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		572230FB25A950820048AF2B /* Diet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
+		572230FC25A950820048AF2B /* DietViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
+		572230FE25A950820048AF2B /* PressureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressureViewController.swift; sourceTree = "<group>"; };
+		572230FF25A950820048AF2B /* Pressure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pressure.storyboard; sourceTree = "<group>"; };
+		5722310125A950820048AF2B /* HeartMeasure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HeartMeasure.storyboard; sourceTree = "<group>"; };
+		5722310225A950820048AF2B /* HeartMeasureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartMeasureViewController.swift; sourceTree = "<group>"; };
+		5722310425A950820048AF2B /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		5722310525A950820048AF2B /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5722310725A950820048AF2B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5722310825A950820048AF2B /* Root.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		5722311925A950B20048AF2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5722311B25A950B30048AF2B /* GothamPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-LightItalic.ttf"; sourceTree = "<group>"; };
+		5722311C25A950B30048AF2B /* GothamPro-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5722311D25A950B30048AF2B /* GothamPro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamPro.ttf; sourceTree = "<group>"; };
+		5722311E25A950B30048AF2B /* GothamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Medium.ttf"; sourceTree = "<group>"; };
+		5722311F25A950B30048AF2B /* GothamPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5722312025A950B30048AF2B /* GothamPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Black.ttf"; sourceTree = "<group>"; };
+		5722312125A950B30048AF2B /* GothamProNarrow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamProNarrow-Bold.ttf"; sourceTree = "<group>"; };
+		5722312225A950B30048AF2B /* GothamPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5722312325A950B30048AF2B /* GothamProNarrow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamProNarrow-Medium.ttf"; sourceTree = "<group>"; };
+		5722312425A950B30048AF2B /* GothamPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Italic.ttf"; sourceTree = "<group>"; };
+		5722312525A950B30048AF2B /* GothamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Light.ttf"; sourceTree = "<group>"; };
+		5722312625A950B30048AF2B /* GothamPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamPro-Bold.ttf"; sourceTree = "<group>"; };
+		5722313625A951270048AF2B /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5722313725A951270048AF2B /* PulseDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseDevice.swift; sourceTree = "<group>"; };
+		5722313825A951270048AF2B /* PulseColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseColor.swift; sourceTree = "<group>"; };
+		5722313925A951270048AF2B /* PulseFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseFont.swift; sourceTree = "<group>"; };
+		5722313A25A951270048AF2B /* PulseViewSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseViewSetting.swift; sourceTree = "<group>"; };
+		575DB08625AC031600030863 /* HeartRateTagsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTagsController.swift; sourceTree = "<group>"; };
+		575DB08925AC032E00030863 /* HeartRateHitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateHitController.swift; sourceTree = "<group>"; };
+		57D2000E25B4B68E00E31884 /* HeartRateKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateKitController.h; sourceTree = "<group>"; };
+		57D2000F25B4B68E00E31884 /* HeartRateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateKit.h; sourceTree = "<group>"; };
+		57D2001025B4B68E00E31884 /* HeartRateKitResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateKitResult.h; sourceTree = "<group>"; };
+		57D2001225B4B68E00E31884 /* UIView+HeartRateKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HeartRateKit.h"; sourceTree = "<group>"; };
+		57D2001325B4B68E00E31884 /* HeartRateKitResult+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HeartRateKitResult+Protected.h"; sourceTree = "<group>"; };
+		57D2001425B4B68E00E31884 /* HeartRateKitAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateKitAlgorithm.h; sourceTree = "<group>"; };
+		57D2001525B4B68E00E31884 /* HeartRateKitAlgorithm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HeartRateKitAlgorithm.mm; sourceTree = "<group>"; };
+		57D2001625B4B68E00E31884 /* HRKButterworth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKButterworth.h; sourceTree = "<group>"; };
+		57D2001725B4B68E00E31884 /* HeartRateKitResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateKitResult.m; sourceTree = "<group>"; };
+		57D2001825B4B68E00E31884 /* UIImage+ImageAverageColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageAverageColor.h"; sourceTree = "<group>"; };
+		57D2001925B4B68E00E31884 /* UIView+HeartRateKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HeartRateKit.m"; sourceTree = "<group>"; };
+		57D2001A25B4B68E00E31884 /* HRKButterworth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HRKButterworth.cpp; sourceTree = "<group>"; };
+		57D2001B25B4B68E00E31884 /* HeartRateKitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateKitController.m; sourceTree = "<group>"; };
+		57D2001C25B4B68E00E31884 /* UIImage+ImageAverageColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageAverageColor.m"; sourceTree = "<group>"; };
+		58BC05B464D27A81664B44E2 /* Pods-PulseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp.debug.xcconfig"; path = "Target Support Files/Pods-PulseApp/Pods-PulseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9AE63770477F0ECAABB276FC /* Pods-PulseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseApp.release.xcconfig"; path = "Target Support Files/Pods-PulseApp/Pods-PulseApp.release.xcconfig"; sourceTree = "<group>"; };
+		AEC63E6225DBC0F100A4C70E /* DayHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHistoryViewController.swift; sourceTree = "<group>"; };
+		AEC63E6525DBC0FC00A4C70E /* WeekHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekHistoryViewController.swift; sourceTree = "<group>"; };
+		AEC63E6825DBC10F00A4C70E /* MounthHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MounthHistoryViewController.swift; sourceTree = "<group>"; };
+		AEC63E6B25DBC1DB00A4C70E /* MenuBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuBar.xib; sourceTree = "<group>"; };
+		AEC63E6C25DBC1DB00A4C70E /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		AEC63E7025DBC37100A4C70E /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		AEC63E7325DBC39200A4C70E /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		AEC63E7425DBC39200A4C70E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AEC63E7825DBC9A100A4C70E /* OneRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRateView.swift; sourceTree = "<group>"; };
+		AEC63E7B25DBC9A800A4C70E /* OneRateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneRateView.xib; sourceTree = "<group>"; };
+		AEC63E7F25DBD23A00A4C70E /* OneRateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRateTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		571E015125A38F95004E2E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E72868DA3F283A1F82D5C92 /* Pods_PulseApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		570B3C5A25AADE5F00E41549 /* HeartRateKit */ = {
+			isa = PBXGroup;
+			children = (
+				570B3C5B25AADE6E00E41549 /* HeartRateKit.storyboard */,
+				575DB08625AC031600030863 /* HeartRateTagsController.swift */,
+				575DB08925AC032E00030863 /* HeartRateHitController.swift */,
+			);
+			path = HeartRateKit;
+			sourceTree = "<group>";
+		};
+		571E014B25A38F95004E2E7B = {
+			isa = PBXGroup;
+			children = (
+				571E015625A38F95004E2E7B /* PulseApp */,
+				571E015525A38F95004E2E7B /* Products */,
+				F56491D161F8D528AE923967 /* Pods */,
+				A981E5D3672F28EA3B7B2362 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		571E015525A38F95004E2E7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				571E015425A38F95004E2E7B /* PulseApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		571E015625A38F95004E2E7B /* PulseApp */ = {
+			isa = PBXGroup;
+			children = (
+				57D2001125B4B68E00E31884 /* Internal */,
+				57D2000D25B4B68E00E31884 /* Public */,
+				5722311725A950B20048AF2B /* Resoures */,
+				572230F425A950820048AF2B /* Scenes */,
+				571E017525A394E4004E2E7B /* Application */,
+				571E017B25A39699004E2E7B /* UI */,
+				571E017925A395FA004E2E7B /* Common */,
+				571E017725A395C2004E2E7B /* Repository */,
+				571E016825A38F9A004E2E7B /* Info.plist */,
+				571E018225A39828004E2E7B /* R.generated.swift */,
+				570B3C1F25AACF5800E41549 /* PulseApp-Bridging-Header.h */,
+			);
+			path = PulseApp;
+			sourceTree = "<group>";
+		};
+		571E017525A394E4004E2E7B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				571E015725A38F95004E2E7B /* AppDelegate.swift */,
+				571E015925A38F95004E2E7B /* SceneDelegate.swift */,
+				571E019A25A399FB004E2E7B /* Router.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		571E017725A395C2004E2E7B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				571E016025A38F95004E2E7B /* PulseApp.xcdatamodeld */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		571E017925A395FA004E2E7B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5722313625A951270048AF2B /* MainTabBarController.swift */,
+				5722313825A951270048AF2B /* PulseColor.swift */,
+				5722313725A951270048AF2B /* PulseDevice.swift */,
+				5722313925A951270048AF2B /* PulseFont.swift */,
+				5722313A25A951270048AF2B /* PulseViewSetting.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		571E017B25A39699004E2E7B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AEC63E7025DBC37100A4C70E /* DefaultTableViewCell.swift */,
+				AEC63E6C25DBC1DB00A4C70E /* MenuBar.swift */,
+				AEC63E7F25DBD23A00A4C70E /* OneRateTableViewCell.swift */,
+				AEC63E6B25DBC1DB00A4C70E /* MenuBar.xib */,
+				AEC63E7825DBC9A100A4C70E /* OneRateView.swift */,
+				AEC63E7B25DBC9A800A4C70E /* OneRateView.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		572230F425A950820048AF2B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				570B3C5A25AADE5F00E41549 /* HeartRateKit */,
+				572230F525A950820048AF2B /* Settings */,
+				572230F825A950820048AF2B /* Splash */,
+				572230FA25A950820048AF2B /* Diet */,
+				572230FD25A950820048AF2B /* Pressure */,
+				5722310025A950820048AF2B /* HeartMeasure */,
+				5722310325A950820048AF2B /* History */,
+				5722310625A950820048AF2B /* Root */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		572230F525A950820048AF2B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				572230F625A950820048AF2B /* Settings.storyboard */,
+				572230F725A950820048AF2B /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		572230F825A950820048AF2B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				572230F925A950820048AF2B /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		572230FA25A950820048AF2B /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+				572230FB25A950820048AF2B /* Diet.storyboard */,
+				572230FC25A950820048AF2B /* DietViewController.swift */,
+			);
+			path = Diet;
+			sourceTree = "<group>";
+		};
+		572230FD25A950820048AF2B /* Pressure */ = {
+			isa = PBXGroup;
+			children = (
+				572230FF25A950820048AF2B /* Pressure.storyboard */,
+				572230FE25A950820048AF2B /* PressureViewController.swift */,
+			);
+			path = Pressure;
+			sourceTree = "<group>";
+		};
+		5722310025A950820048AF2B /* HeartMeasure */ = {
+			isa = PBXGroup;
+			children = (
+				5722310125A950820048AF2B /* HeartMeasure.storyboard */,
+				5722310225A950820048AF2B /* HeartMeasureViewController.swift */,
+			);
+			path = HeartMeasure;
+			sourceTree = "<group>";
+		};
+		5722310325A950820048AF2B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				5722310425A950820048AF2B /* History.storyboard */,
+				AEC63E6225DBC0F100A4C70E /* DayHistoryViewController.swift */,
+				AEC63E6525DBC0FC00A4C70E /* WeekHistoryViewController.swift */,
+				AEC63E6825DBC10F00A4C70E /* MounthHistoryViewController.swift */,
+				5722310525A950820048AF2B /* HistoryViewController.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		5722310625A950820048AF2B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5722310825A950820048AF2B /* Root.storyboard */,
+				5722310725A950820048AF2B /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5722311725A950B20048AF2B /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				AEC63E7325DBC39200A4C70E /* Cache.swift */,
+				AEC63E7425DBC39200A4C70E /* UIViewControllerExtension.swift */,
+				5722311825A950B20048AF2B /* Images */,
+				5722311A25A950B30048AF2B /* Fonts */,
+			);
+			path = Resoures;
+			sourceTree = "<group>";
+		};
+		5722311825A950B20048AF2B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5722311925A950B20048AF2B /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		5722311A25A950B30048AF2B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5722311B25A950B30048AF2B /* GothamPro-LightItalic.ttf */,
+				5722311C25A950B30048AF2B /* GothamPro-MediumItalic.ttf */,
+				5722311D25A950B30048AF2B /* GothamPro.ttf */,
+				5722311E25A950B30048AF2B /* GothamPro-Medium.ttf */,
+				5722311F25A950B30048AF2B /* GothamPro-BlackItalic.ttf */,
+				5722312025A950B30048AF2B /* GothamPro-Black.ttf */,
+				5722312125A950B30048AF2B /* GothamProNarrow-Bold.ttf */,
+				5722312225A950B30048AF2B /* GothamPro-BoldItalic.ttf */,
+				5722312325A950B30048AF2B /* GothamProNarrow-Medium.ttf */,
+				5722312425A950B30048AF2B /* GothamPro-Italic.ttf */,
+				5722312525A950B30048AF2B /* GothamPro-Light.ttf */,
+				5722312625A950B30048AF2B /* GothamPro-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		57D2000D25B4B68E00E31884 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				57D2000E25B4B68E00E31884 /* HeartRateKitController.h */,
+				57D2000F25B4B68E00E31884 /* HeartRateKit.h */,
+				57D2001025B4B68E00E31884 /* HeartRateKitResult.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		57D2001125B4B68E00E31884 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				57D2001225B4B68E00E31884 /* UIView+HeartRateKit.h */,
+				57D2001325B4B68E00E31884 /* HeartRateKitResult+Protected.h */,
+				57D2001425B4B68E00E31884 /* HeartRateKitAlgorithm.h */,
+				57D2001525B4B68E00E31884 /* HeartRateKitAlgorithm.mm */,
+				57D2001625B4B68E00E31884 /* HRKButterworth.h */,
+				57D2001725B4B68E00E31884 /* HeartRateKitResult.m */,
+				57D2001825B4B68E00E31884 /* UIImage+ImageAverageColor.h */,
+				57D2001925B4B68E00E31884 /* UIView+HeartRateKit.m */,
+				57D2001A25B4B68E00E31884 /* HRKButterworth.cpp */,
+				57D2001B25B4B68E00E31884 /* HeartRateKitController.m */,
+				57D2001C25B4B68E00E31884 /* UIImage+ImageAverageColor.m */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		A981E5D3672F28EA3B7B2362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B07270EE3E1DD488BBD7F01 /* Pods_PulseApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F56491D161F8D528AE923967 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58BC05B464D27A81664B44E2 /* Pods-PulseApp.debug.xcconfig */,
+				9AE63770477F0ECAABB276FC /* Pods-PulseApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		571E015325A38F95004E2E7B /* PulseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 571E016B25A38F9A004E2E7B /* Build configuration list for PBXNativeTarget "PulseApp" */;
+			buildPhases = (
+				5D0CB5CE24963A8F832B844F /* [CP] Check Pods Manifest.lock */,
+				571E018025A3970E004E2E7B /* R.swift */,
+				571E015025A38F95004E2E7B /* Sources */,
+				571E015125A38F95004E2E7B /* Frameworks */,
+				571E015225A38F95004E2E7B /* Resources */,
+				BE7B284C9163933EFF09C360 /* [CP] Embed Pods Frameworks */,
+				57D2FFD925B4B27800E31884 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulseApp;
+			productName = PulseApp;
+			productReference = 571E015425A38F95004E2E7B /* PulseApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		571E014C25A38F95004E2E7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					571E015325A38F95004E2E7B = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1230;
+					};
+				};
+			};
+			buildConfigurationList = 571E014F25A38F95004E2E7B /* Build configuration list for PBXProject "PulseApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 571E014B25A38F95004E2E7B;
+			productRefGroup = 571E015525A38F95004E2E7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				571E015325A38F95004E2E7B /* PulseApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		571E015225A38F95004E2E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5722312C25A950B30048AF2B /* GothamPro-BlackItalic.ttf in Resources */,
+				5722313325A950B30048AF2B /* GothamPro-Bold.ttf in Resources */,
+				AEC63E6D25DBC1DB00A4C70E /* MenuBar.xib in Resources */,
+				5722313025A950B30048AF2B /* GothamProNarrow-Medium.ttf in Resources */,
+				5722310C25A950820048AF2B /* Diet.storyboard in Resources */,
+				570B3C5C25AADE6E00E41549 /* HeartRateKit.storyboard in Resources */,
+				5722311525A950820048AF2B /* Root.storyboard in Resources */,
+				5722311225A950820048AF2B /* History.storyboard in Resources */,
+				5722311025A950820048AF2B /* HeartMeasure.storyboard in Resources */,
+				5722310F25A950820048AF2B /* Pressure.storyboard in Resources */,
+				5722312D25A950B30048AF2B /* GothamPro-Black.ttf in Resources */,
+				5722313125A950B30048AF2B /* GothamPro-Italic.ttf in Resources */,
+				5722312925A950B30048AF2B /* GothamPro-MediumItalic.ttf in Resources */,
+				5722310925A950820048AF2B /* Settings.storyboard in Resources */,
+				5722312F25A950B30048AF2B /* GothamPro-BoldItalic.ttf in Resources */,
+				5722313225A950B30048AF2B /* GothamPro-Light.ttf in Resources */,
+				5722312E25A950B30048AF2B /* GothamProNarrow-Bold.ttf in Resources */,
+				5722312B25A950B30048AF2B /* GothamPro-Medium.ttf in Resources */,
+				AEC63E7C25DBC9A800A4C70E /* OneRateView.xib in Resources */,
+				5722312A25A950B30048AF2B /* GothamPro.ttf in Resources */,
+				5722312825A950B30048AF2B /* GothamPro-LightItalic.ttf in Resources */,
+				5722312725A950B30048AF2B /* Assets.xcassets in Resources */,
+				5722310B25A950820048AF2B /* Splash.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		571E018025A3970E004E2E7B /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		57D2FFD925B4B27800E31884 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		5D0CB5CE24963A8F832B844F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PulseApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE7B284C9163933EFF09C360 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulseApp/Pods-PulseApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PulseApp/Pods-PulseApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PulseApp/Pods-PulseApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		571E015025A38F95004E2E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575DB08725AC031600030863 /* HeartRateTagsController.swift in Sources */,
+				AEC63E6325DBC0F100A4C70E /* DayHistoryViewController.swift in Sources */,
+				5722310D25A950820048AF2B /* DietViewController.swift in Sources */,
+				571E015825A38F95004E2E7B /* AppDelegate.swift in Sources */,
+				5722313C25A951270048AF2B /* PulseDevice.swift in Sources */,
+				5722313F25A951270048AF2B /* PulseViewSetting.swift in Sources */,
+				57D2002025B4B68E00E31884 /* HRKButterworth.cpp in Sources */,
+				5722313B25A951270048AF2B /* MainTabBarController.swift in Sources */,
+				57D2001E25B4B68E00E31884 /* HeartRateKitResult.m in Sources */,
+				5722311425A950820048AF2B /* RootViewController.swift in Sources */,
+				571E015A25A38F95004E2E7B /* SceneDelegate.swift in Sources */,
+				5722310A25A950820048AF2B /* SettingsViewController.swift in Sources */,
+				5722313E25A951270048AF2B /* PulseFont.swift in Sources */,
+				AEC63E6625DBC0FC00A4C70E /* WeekHistoryViewController.swift in Sources */,
+				57D2002225B4B68E00E31884 /* UIImage+ImageAverageColor.m in Sources */,
+				5722311125A950820048AF2B /* HeartMeasureViewController.swift in Sources */,
+				AEC63E7525DBC39200A4C70E /* Cache.swift in Sources */,
+				AEC63E6925DBC10F00A4C70E /* MounthHistoryViewController.swift in Sources */,
+				AEC63E7625DBC39200A4C70E /* UIViewControllerExtension.swift in Sources */,
+				5722311325A950820048AF2B /* HistoryViewController.swift in Sources */,
+				AEC63E7125DBC37100A4C70E /* DefaultTableViewCell.swift in Sources */,
+				AEC63E7925DBC9A200A4C70E /* OneRateView.swift in Sources */,
+				57D2002125B4B68E00E31884 /* HeartRateKitController.m in Sources */,
+				575DB08A25AC032E00030863 /* HeartRateHitController.swift in Sources */,
+				5722310E25A950820048AF2B /* PressureViewController.swift in Sources */,
+				571E016225A38F95004E2E7B /* PulseApp.xcdatamodeld in Sources */,
+				AEC63E8025DBD23A00A4C70E /* OneRateTableViewCell.swift in Sources */,
+				571E019B25A399FB004E2E7B /* Router.swift in Sources */,
+				571E018325A39828004E2E7B /* R.generated.swift in Sources */,
+				5722313D25A951270048AF2B /* PulseColor.swift in Sources */,
+				57D2001F25B4B68E00E31884 /* UIView+HeartRateKit.m in Sources */,
+				AEC63E6E25DBC1DB00A4C70E /* MenuBar.swift in Sources */,
+				57D2001D25B4B68E00E31884 /* HeartRateKitAlgorithm.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		571E016925A38F9A004E2E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		571E016A25A38F9A004E2E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		571E016C25A38F9A004E2E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58BC05B464D27A81664B44E2 /* Pods-PulseApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97T697ANXW;
+				INFOPLIST_FILE = PulseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Rswift\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-lstdc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phoapps.checkpulsenow.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PulseApp/PulseApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		571E016D25A38F9A004E2E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE63770477F0ECAABB276FC /* Pods-PulseApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97T697ANXW;
+				INFOPLIST_FILE = PulseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.1;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Lottie\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Rswift\"",
+					"-framework",
+					"\"UIKit\"",
+					"-ObjC",
+					"-lstdc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phoapps.checkpulsenow.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PulseApp/PulseApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		571E014F25A38F95004E2E7B /* Build configuration list for PBXProject "PulseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571E016925A38F9A004E2E7B /* Debug */,
+				571E016A25A38F9A004E2E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		571E016B25A38F9A004E2E7B /* Build configuration list for PBXNativeTarget "PulseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				571E016C25A38F9A004E2E7B /* Debug */,
+				571E016D25A38F9A004E2E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		571E016025A38F95004E2E7B /* PulseApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				571E016125A38F95004E2E7B /* PulseApp.xcdatamodel */,
+			);
+			currentVersion = 571E016125A38F95004E2E7B /* PulseApp.xcdatamodel */;
+			path = PulseApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 571E014C25A38F95004E2E7B /* Project object */;
+}

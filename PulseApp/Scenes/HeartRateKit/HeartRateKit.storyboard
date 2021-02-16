@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xg4-jH-5Ft">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamPro-Bold.ttf">
+            <string>GothamPro-Bold</string>
+        </array>
+        <array key="GothamPro-Light.ttf">
+            <string>GothamPro-Light</string>
+        </array>
+        <array key="GothamPro-Medium.ttf">
+            <string>GothamPro-Medium</string>
+        </array>
+        <array key="GothamPro.ttf">
+            <string>GothamPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Heart Rate Tags Controller-->
+        <scene sceneID="oOx-sR-oYK">
+            <objects>
+                <viewController id="yaJ-Fd-VsX" customClass="HeartRateTagsController" customModule="PulseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbi-jP-eCb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5y2-W4-34L">
+                                <rect key="frame" x="47" y="65" width="320" height="806"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MP7-xp-gvO">
+                                        <rect key="frame" x="275" y="15" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="1gO-ep-vka"/>
+                                            <constraint firstAttribute="width" constant="30" id="t6o-nY-B7A"/>
+                                        </constraints>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="dismissAction:" destination="yaJ-Fd-VsX" eventType="touchUpInside" id="j3s-mU-FPn"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PUa-aW-tyT">
+                                        <rect key="frame" x="10" y="30" width="300" height="90.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-vX-RdP">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="18"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="20"/>
+                                                <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add tag to you measurement " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVM-qN-ed4">
+                                                <rect key="frame" x="0.0" y="28" width="300" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="just to better understand how your" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-Qw-LQT">
+                                                <rect key="frame" x="0.0" y="52.5" width="300" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lifestyle affects your heart rate" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPq-7P-rp6">
+                                                <rect key="frame" x="0.0" y="77" width="300" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Light" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jGJ-JO-OIo">
+                                        <rect key="frame" x="10" y="140.5" width="300" height="205"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jjN-dI-XWW">
+                                                <rect key="frame" x="5" y="0.0" width="290" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvS-HT-VU4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="8ch-hJ-909"/>
+                                                            <constraint firstAttribute="height" constant="40" id="w5V-gK-KGy"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title="☕️ Woke Up">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM4-Id-gRX">
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="0vy-OK-Kam"/>
+                                                            <constraint firstAttribute="height" constant="40" id="L81-qQ-bvD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title="😴 Before Bed">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Zd-sE-kxC">
+                                                <rect key="frame" x="5" y="55" width="290" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DF-wf-Umt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="4PS-JU-wJ5"/>
+                                                            <constraint firstAttribute="height" constant="40" id="RbN-9l-DiP"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title=" 💪🏻 Workout">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeG-TK-Wr9">
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="H5e-W4-6Qc"/>
+                                                            <constraint firstAttribute="height" constant="40" id="lHq-ic-1QE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title=" 🛀🏻 Resting">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gh6-KO-h7L">
+                                                <rect key="frame" x="5" y="110" width="290" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-vT-ZeN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="LB8-b6-Upw"/>
+                                                            <constraint firstAttribute="width" constant="140" id="thN-ny-Quj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title="  🏃🏻‍♂️ Running">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-nS-DEt">
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="140" id="Gac-Rx-tkY"/>
+                                                            <constraint firstAttribute="height" constant="40" id="XnM-nC-35A"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title=" 👌🏻 Feel Good">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tpd-rk-IQX">
+                                                <rect key="frame" x="5" y="165" width="290" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AH5-Ww-1ob">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="t7o-h7-e7f"/>
+                                                            <constraint firstAttribute="width" constant="140" id="z7K-qb-1Sf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title=" 😓 Tired">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-Ou-1lZ">
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="126-DF-vdM"/>
+                                                            <constraint firstAttribute="width" constant="140" id="Hcm-Cb-o00"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="16"/>
+                                                        <state key="normal" title="💼 Work">
+                                                            <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-ad-k3O">
+                                        <rect key="frame" x="186" y="194" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvv-Hm-0aT">
+                                        <rect key="frame" x="20" y="375.5" width="59" height="18"/>
+                                        <fontDescription key="fontDescription" name="GothamPro-Medium" family="Gotham Pro" pointSize="20"/>
+                                        <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add comment of a note  to this measurement" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CeC-bG-hEh">
+                                        <rect key="frame" x="20" y="403.5" width="280" height="110"/>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="ncH-RM-Cfj"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4w-tw-EGu">
+                                        <rect key="frame" x="20" y="746" width="280" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lHe-26-DLW"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelButtonAction:" destination="yaJ-Fd-VsX" eventType="touchUpInside" id="Pf3-wo-kCl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="CeC-bG-hEh" firstAttribute="leading" secondItem="5y2-W4-34L" secondAttribute="leading" constant="20" id="ABR-8W-W97"/>
+                                    <constraint firstAttribute="trailing" secondItem="CeC-bG-hEh" secondAttribute="trailing" constant="20" id="KBF-4b-QrI"/>
+                                    <constraint firstAttribute="width" constant="320" id="L1h-Ii-Wmu"/>
+                                    <constraint firstAttribute="bottom" secondItem="h4w-tw-EGu" secondAttribute="bottom" constant="20" id="LK1-vp-g9M"/>
+                                    <constraint firstItem="h4w-tw-EGu" firstAttribute="leading" secondItem="5y2-W4-34L" secondAttribute="leading" constant="20" id="OeA-zt-a5K"/>
+                                    <constraint firstAttribute="trailing" secondItem="h4w-tw-EGu" secondAttribute="trailing" constant="20" id="Oqw-QN-Lpy"/>
+                                    <constraint firstItem="PUa-aW-tyT" firstAttribute="leading" secondItem="5y2-W4-34L" secondAttribute="leading" constant="10" id="Q33-1a-F5F"/>
+                                    <constraint firstItem="MP7-xp-gvO" firstAttribute="top" secondItem="5y2-W4-34L" secondAttribute="top" constant="15" id="RGd-iy-h7X"/>
+                                    <constraint firstItem="Cvv-Hm-0aT" firstAttribute="top" secondItem="jGJ-JO-OIo" secondAttribute="bottom" constant="30" id="aXN-fc-bhI"/>
+                                    <constraint firstItem="CeC-bG-hEh" firstAttribute="top" secondItem="Cvv-Hm-0aT" secondAttribute="bottom" constant="10" id="bjB-x7-xZ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="PUa-aW-tyT" secondAttribute="trailing" constant="10" id="e5Q-3J-uAi"/>
+                                    <constraint firstItem="jGJ-JO-OIo" firstAttribute="leading" secondItem="5y2-W4-34L" secondAttribute="leading" constant="10" id="m5H-wM-Aj6"/>
+                                    <constraint firstItem="PUa-aW-tyT" firstAttribute="top" secondItem="5y2-W4-34L" secondAttribute="top" constant="30" id="m7D-uX-ygB"/>
+                                    <constraint firstItem="jGJ-JO-OIo" firstAttribute="top" secondItem="PUa-aW-tyT" secondAttribute="bottom" constant="20" id="pC1-TI-GyC"/>
+                                    <constraint firstItem="Cvv-Hm-0aT" firstAttribute="leading" secondItem="5y2-W4-34L" secondAttribute="leading" constant="20" id="tje-eR-LLV"/>
+                                    <constraint firstAttribute="trailing" secondItem="MP7-xp-gvO" secondAttribute="trailing" constant="15" id="yDO-Zy-j33"/>
+                                    <constraint firstAttribute="trailing" secondItem="jGJ-JO-OIo" secondAttribute="trailing" constant="10" id="zig-5t-hnM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hW5-nY-CnK"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29794068999637824" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5y2-W4-34L" firstAttribute="height" secondItem="cbi-jP-eCb" secondAttribute="height" multiplier="0.9" id="VJh-yi-zyK"/>
+                            <constraint firstItem="5y2-W4-34L" firstAttribute="centerY" secondItem="cbi-jP-eCb" secondAttribute="centerY" constant="20" id="gdc-nD-Qbp"/>
+                            <constraint firstItem="5y2-W4-34L" firstAttribute="centerX" secondItem="cbi-jP-eCb" secondAttribute="centerX" id="rPA-61-mR8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vok-JC-cNm"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="h4w-tw-EGu" id="3o5-f5-IQK"/>
+                        <outlet property="tagButton1" destination="FvS-HT-VU4" id="5vm-xz-toX"/>
+                        <outlet property="tagButton2" destination="zM4-Id-gRX" id="xHc-Sw-CNI"/>
+                        <outlet property="tagButton3" destination="8DF-wf-Umt" id="rUn-G5-9HO"/>
+                        <outlet property="tagButton4" destination="xeG-TK-Wr9" id="yHR-y3-1pa"/>
+                        <outlet property="tagButton5" destination="qnF-vT-ZeN" id="Cop-Qm-Bne"/>
+                        <outlet property="tagButton6" destination="jIQ-nS-DEt" id="OtL-RF-1u2"/>
+                        <outlet property="tagButton7" destination="AH5-Ww-1ob" id="3ub-3f-PIu"/>
+                        <outlet property="tagButton8" destination="eYd-Ou-1lZ" id="m6o-r8-dO3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgA-74-Eku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="676.81159420289862" y="-609.375"/>
+        </scene>
+        <!--Heart Rate Kit Controller-->
+        <scene sceneID="CFD-A0-0fv">
+            <objects>
+                <viewController storyboardIdentifier="HeartRateKitController" id="ZDx-RI-pqv" customClass="HeartRateKitController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0v-qm-SKO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Te-ze-agt">
+                                <rect key="frame" x="189" y="416.5" width="36" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es8-Gy-hIf">
+                                        <rect key="frame" x="7.5" y="0.0" width="21" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8P-j2-eOd">
+                                        <rect key="frame" x="0.0" y="28.5" width="36" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="0Kw-80-CbV">
+                                <rect key="frame" x="82" y="495.5" width="250" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="NP2-gw-rye"/>
+                                </constraints>
+                                <color key="progressTintColor" systemColor="systemRedColor"/>
+                                <color key="trackTintColor" systemColor="systemGray6Color"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="barHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="BT2-X5-lmf">
+                                <rect key="frame" x="62" y="519.5" width="290" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please place your finger on camera and flashlight" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ro-PJ-b5j">
+                                        <rect key="frame" x="9.5" y="0.0" width="271.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHM-TZ-eMR">
+                                        <rect key="frame" x="20" y="66" width="250" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="ddw-6Q-tL3"/>
+                                            <constraint firstAttribute="height" constant="40" id="s7s-Uw-j8r"/>
+                                        </constraints>
+                                        <state key="normal" title="Start measure"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojo-r4-3Hl">
+                                <rect key="frame" x="-181" y="88" width="776" height="348.5"/>
+                                <state key="normal" image="heart"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1zk-ET-pes"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ojo-r4-3Hl" firstAttribute="height" secondItem="1zk-ET-pes" secondAttribute="height" multiplier="0.45" id="38I-NR-RVv"/>
+                            <constraint firstItem="ojo-r4-3Hl" firstAttribute="centerX" secondItem="V0v-qm-SKO" secondAttribute="centerX" id="Am0-To-2uC"/>
+                            <constraint firstItem="BT2-X5-lmf" firstAttribute="centerX" secondItem="V0v-qm-SKO" secondAttribute="centerX" id="Gpj-KK-QmA"/>
+                            <constraint firstItem="BT2-X5-lmf" firstAttribute="top" secondItem="0Kw-80-CbV" secondAttribute="bottom" constant="20" id="Q5u-yE-L5G"/>
+                            <constraint firstItem="8Te-ze-agt" firstAttribute="top" secondItem="ojo-r4-3Hl" secondAttribute="bottom" constant="-20" id="ZTa-XF-AAq"/>
+                            <constraint firstItem="ojo-r4-3Hl" firstAttribute="top" secondItem="1zk-ET-pes" secondAttribute="top" id="cL9-87-AeR"/>
+                            <constraint firstItem="BT2-X5-lmf" firstAttribute="width" secondItem="1zk-ET-pes" secondAttribute="width" multiplier="0.7" id="dSB-aS-xzP"/>
+                            <constraint firstItem="0Kw-80-CbV" firstAttribute="top" secondItem="8Te-ze-agt" secondAttribute="bottom" constant="30" id="eWo-hJ-hap"/>
+                            <constraint firstItem="8Te-ze-agt" firstAttribute="centerX" secondItem="V0v-qm-SKO" secondAttribute="centerX" id="xDE-0P-O0p"/>
+                            <constraint firstItem="0Kw-80-CbV" firstAttribute="centerX" secondItem="V0v-qm-SKO" secondAttribute="centerX" id="xWW-0Z-gss"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mI7-pN-6K9">
+                        <barButtonItem key="rightBarButtonItem" image="ads" id="sAM-n3-0QG">
+                            <color key="tintColor" red="0.87843137250000003" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bpmLabel" destination="F8P-j2-eOd" id="Tle-hr-kzR"/>
+                        <outlet property="bpmProgress" destination="0Kw-80-CbV" id="gj4-mu-MiD"/>
+                        <outlet property="bpmValue" destination="Es8-Gy-hIf" id="xHJ-9j-jtd"/>
+                        <outlet property="heart" destination="ojo-r4-3Hl" id="oE2-Lx-xUk"/>
+                        <outlet property="hitLabel" destination="6ro-PJ-b5j" id="Yfs-xH-eNp"/>
+                        <outlet property="startButton" destination="mHM-TZ-eMR" id="rUf-Vd-BHv"/>
+                        <segue destination="uNg-99-biv" kind="presentation" identifier="hit" modalPresentationStyle="overFullScreen" id="U9B-HM-miC"/>
+                        <segue destination="yaJ-Fd-VsX" kind="presentation" identifier="tags" modalPresentationStyle="overFullScreen" id="oe1-DW-60h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZG-aN-8iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="93"/>
+        </scene>
+        <!--Heart Rate Hit Controller-->
+        <scene sceneID="0U7-Jh-Ico">
+            <objects>
+                <viewController id="uNg-99-biv" customClass="HeartRateHitController" customModule="PulseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8PI-0v-soZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUq-sL-98U">
+                                <rect key="frame" x="0.0" y="220.5" width="414" height="695.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtJ-bb-AV1">
+                                        <rect key="frame" x="359" y="15" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="L0f-eV-Zo6"/>
+                                            <constraint firstAttribute="width" constant="40" id="UnG-NA-2i6"/>
+                                        </constraints>
+                                        <state key="normal" image="close"/>
+                                        <connections>
+                                            <action selector="dismissAction:" destination="uNg-99-biv" eventType="touchUpInside" id="1LX-yN-TOV"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="csX-dL-Icf">
+                                        <rect key="frame" x="42" y="105" width="330" height="135"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to measure your pulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoF-OX-LML">
+                                                <rect key="frame" x="13" y="0.0" width="304" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Ubc-3a-Mnr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4y9-kK-pIw">
+                                                <rect key="frame" x="5" y="60" width="320.5" height="75"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relax, breathe, and keep still. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ff-wz-hKa">
+                                                        <rect key="frame" x="27.5" y="0.0" width="265" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="YKG-rj-WNj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press with your finger to cover both" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOI-8J-YBv">
+                                                        <rect key="frame" x="0.0" y="25" width="320.5" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="PeV-hf-A2m"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the back camera and flashlight." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXb-yu-3gQ">
+                                                        <rect key="frame" x="20.5" y="50" width="279" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="QTp-Y6-MHz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="9Pr-EP-5yK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="QHW-MC-9Qd">
+                                        <rect key="frame" x="0.0" y="290" width="414" height="505.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QHW-MC-9Qd" secondAttribute="bottom" constant="-100" id="HhY-mj-DJn"/>
+                                    <constraint firstItem="QHW-MC-9Qd" firstAttribute="top" secondItem="csX-dL-Icf" secondAttribute="bottom" constant="50" id="eTQ-bG-p3X"/>
+                                    <constraint firstItem="QHW-MC-9Qd" firstAttribute="leading" secondItem="cUq-sL-98U" secondAttribute="leading" id="erw-f3-qET"/>
+                                    <constraint firstItem="csX-dL-Icf" firstAttribute="top" secondItem="vtJ-bb-AV1" secondAttribute="bottom" constant="50" id="fP0-oG-oz9"/>
+                                    <constraint firstAttribute="trailing" secondItem="vtJ-bb-AV1" secondAttribute="trailing" constant="15" id="hKE-WG-4TN"/>
+                                    <constraint firstItem="csX-dL-Icf" firstAttribute="centerX" secondItem="cUq-sL-98U" secondAttribute="centerX" id="ly0-No-J1L"/>
+                                    <constraint firstItem="vtJ-bb-AV1" firstAttribute="top" secondItem="cUq-sL-98U" secondAttribute="top" constant="15" id="u3I-WG-HaR"/>
+                                    <constraint firstAttribute="trailing" secondItem="QHW-MC-9Qd" secondAttribute="trailing" id="wEb-f1-fpt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XiN-Oh-Oxj"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.099584112104201164" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cUq-sL-98U" firstAttribute="leading" secondItem="XiN-Oh-Oxj" secondAttribute="leading" id="NUm-OY-wuY"/>
+                            <constraint firstItem="cUq-sL-98U" firstAttribute="trailing" secondItem="XiN-Oh-Oxj" secondAttribute="trailing" id="Znu-3H-dF8"/>
+                            <constraint firstItem="cUq-sL-98U" firstAttribute="height" secondItem="XiN-Oh-Oxj" secondAttribute="height" multiplier="0.85" id="mQb-PC-rzw"/>
+                            <constraint firstAttribute="bottom" secondItem="cUq-sL-98U" secondAttribute="bottom" constant="-20" id="q1u-Ng-lW8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ept-z5-Hxn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSz-om-PFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650.7246376811595" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qKh-OE-mCu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xg4-jH-5Ft" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CbP-K2-lI7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZDx-RI-pqv" kind="relationship" relationship="rootViewController" id="7di-vR-Clt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvQ-h1-zv7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ads" width="22.5" height="22.5"/>
+        <image name="close" width="12.5" height="12.5"/>
+        <image name="heart" width="776" height="776"/>
+        <image name="iphone" width="568" height="1086"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

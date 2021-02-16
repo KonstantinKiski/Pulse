@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuBar" customModule="PulseApp" customModuleProvider="target">
+            <connections>
+                <outlet property="eventsButton" destination="7dt-6G-NdC" id="kSa-dg-HcS"/>
+                <outlet property="newsButton" destination="Olw-vA-KcM" id="sdd-qX-BWM"/>
+                <outlet property="stackView" destination="GoJ-hA-h5X" id="MlM-VL-3vf"/>
+                <outlet property="todayButton" destination="QIn-vz-qAa" id="Vri-cK-EkS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-xT-1Eo">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="32"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GoJ-hA-h5X">
+                            <rect key="frame" x="2" y="2" width="339" height="28"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-vz-qAa">
+                                    <rect key="frame" x="0.0" y="0.0" width="113" height="28"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <state key="normal" title="Day">
+                                        <color key="titleColor" red="0.38431372549019605" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="todayButton:" destination="-1" eventType="touchUpInside" id="oww-KI-9jO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dt-6G-NdC">
+                                    <rect key="frame" x="113" y="0.0" width="113" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Week">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="eventsButton:" destination="-1" eventType="touchUpInside" id="UIg-AD-PE2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olw-vA-KcM">
+                                    <rect key="frame" x="226" y="0.0" width="113" height="28"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <state key="normal" title="Mounth">
+                                        <color key="titleColor" red="0.38431372549019605" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="newsButton:" destination="-1" eventType="touchUpInside" id="mhI-xo-tPm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="GoJ-hA-h5X" firstAttribute="top" secondItem="Mm7-xT-1Eo" secondAttribute="top" constant="2" id="CKh-Nj-eIL"/>
+                        <constraint firstItem="GoJ-hA-h5X" firstAttribute="leading" secondItem="Mm7-xT-1Eo" secondAttribute="leading" constant="2" id="YPL-60-k3Z"/>
+                        <constraint firstAttribute="bottom" secondItem="GoJ-hA-h5X" secondAttribute="bottom" constant="2" id="fWh-jQ-fo8"/>
+                        <constraint firstAttribute="trailing" secondItem="GoJ-hA-h5X" secondAttribute="trailing" constant="2" id="s56-v6-LLr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mm7-xT-1Eo" secondAttribute="trailing" id="JNG-qt-733"/>
+                <constraint firstItem="Mm7-xT-1Eo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YMI-kT-B5f"/>
+                <constraint firstItem="Mm7-xT-1Eo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="y7T-20-oji"/>
+                <constraint firstAttribute="bottom" secondItem="Mm7-xT-1Eo" secondAttribute="bottom" id="zZP-0p-PJF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-214" y="68"/>
+        </view>
+    </objects>
+</document>

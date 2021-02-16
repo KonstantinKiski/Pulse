@@ -37,23 +37,14 @@ extension InfoCollectionCell: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = DefaultTableViewCell()
-        cell = tableView.dequeueReusableCell(withIdentifier: "oneCell", for: indexPath) as! OneRateTableViewCell
-        (cell as! OneRateTableViewCell).setData(date: Date(), pulse: (25*(indexPath.row+1)), icon: UIImage(named: "tired") ?? UIImage())
-//        switch indexPath.row {
-//        case 1:
-//            cell = tableView.dequeueReusableCell(withIdentifier: "monthsCell", for: indexPath) as! DefaultTableViewCell
-//        case 2:
-//            cell = tableView.dequeueReusableCell(withIdentifier: "paymentCell", for: indexPath) as! DefaultTableViewCell
-//            cell.setBorderColor(color: UIColor(red: 0.93, green: 0.36, blue: 0.32, alpha: 1.00))
-//        case 3:
-//            cell = tableView.dequeueReusableCell(withIdentifier: "newsCell", for: indexPath) as! DefaultTableViewCell
-//            cell.setBorderColor(color: UIColor(red: 0.00, green: 0.48, blue: 1.00, alpha: 1.00))
-//        case 4:
-//            cell = tableView.dequeueReusableCell(withIdentifier: "managerCell", for: indexPath) as! DefaultTableViewCell
-//        default:
-//            cell = tableView.dequeueReusableCell(withIdentifier: "oneCell", for: indexPath) as! OneRateTableViewCell
-//            (cell as! OneRateTableViewCell).setData(date: Date(), pulse: 20*indexPath.row, icon: UIImage(named: "tired") ?? UIImage())
-//        }
+        switch indexPath.row {
+        case 0:
+            cell = tableView.dequeueReusableCell(withIdentifier: "graphCell", for: indexPath) as! DefaultTableViewCell
+            cell.backgroundColor = .green
+        default:
+            cell = tableView.dequeueReusableCell(withIdentifier: "oneCell", for: indexPath) as! OneRateTableViewCell
+            (cell as! OneRateTableViewCell).setData(date: Date(), pulse: 25*indexPath.row, icon: UIImage(named: "tired") ?? UIImage())
+        }
         return cell
     }
     
